@@ -4,6 +4,7 @@
 
 using namespace std;
 
+//to compute for the area of square
 void square (float side) {
     cout << "Enter the side of the square: ";
     cin >> side;
@@ -11,6 +12,7 @@ void square (float side) {
     cout << "The area is " << (pow (side, 2)) << " sq. units";
 }
 
+//to compute for the area of rectangle
 void rectangle (float length, float width) {
     cout << "Enter the length and width of the rectangle: ";
     cin >> length >> width;
@@ -18,6 +20,7 @@ void rectangle (float length, float width) {
     cout << "The area is " << (length * width) << " sq. units";
 }
 
+//to compute for the area of triangle
 void triangle (float height, float base) {
     cout << "Enter the base and width of the height: ";
     cin >> height >> base;
@@ -25,6 +28,7 @@ void triangle (float height, float base) {
     cout << "The area is " << ((height / base) / 2) << " sq. units";
 }
 
+//to compute for the area of circle
 void circle (float radius) {
     cout << "Enter the radius: ";
     cin >> radius;
@@ -56,21 +60,21 @@ int main()
     switch (choice) {
         case 1: cout << setw(22) << "AREA OF SQUARE\n";
                 cout << "-----------------------------------------" << endl; //41
-                square(side);
+                square(side); //calling the void function to compute for the area of square
                 break;
         case 2: cout << setw(22) << "AREA OF RECTANGLE\n";
                 cout << "-----------------------------------------" << endl; //41
-                rectangle(length, width);
+                rectangle(length, width); //calling the void function to compute for the area of rectangle
                 break;
         case 3: cout << setw(22) << "AREA OF TRIANGLE\n";
                 cout << "-----------------------------------------" << endl; //41
-                triangle(height, base);
+                triangle(height, base); //calling the void function to compute for the area of triangle
                 break;
         case 4: cout << setw(22) << "AREA OF CIRCLE\n";
                 cout << "-----------------------------------------" << endl; //41
-                circle(radius);
+                circle(radius); // calling the void function to compute for the area of circle
                 break;
-        default: cout << "Invalid choice. Try again.";
+        default: cout << "Invalid choice. Try again."; //when the input is not 1 - 4, the program would go back to the menu
                  goto menu;
                  break;
     }
