@@ -87,7 +87,7 @@ int main()
                     result = numfive (input1, input2);
                     cout << "Result: " << result;
                     break;
-            default: cout << "Invalid choice. Try again." << endl;
+            default: cout << "Invalid choice. Try again." << endl; //when the input is not 1 - 5, the program would go back to the menu
                      goto menu;
                      break;
         }
@@ -97,7 +97,7 @@ int main()
         cin >> loop;
         
         cout << "\n\n";
-    } while (loop == 'y' && 'Y');
+    } while (loop == 'y' && 'Y'); //if the input is not y or Y, the program would terminate
     
     return 0;
 }
